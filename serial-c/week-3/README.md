@@ -30,3 +30,11 @@ Program duration: 0.441351 seconds
 ```
 
 Now it is obvious that the range of tests is already huge and we have to improve the potency of this simulation to achieve interesting results further when introducing the multithreading.
+
+Inside Windows Subsytem for Linux we can use `sudo apt-get install mingw-w64` to install a cross compiler and run Intel V-Tune on Windows to check out Hotspots analysis for time spent on each line of source code. We compile `main32.exe` and `main64.exe` using commands `i686-w64-mingw32-gcc -o main32.exe main.c -g` and `x86_64-w64-mingw32-gcc -o main64.exe main.c -g`.
+
+What we found out is CPU architecture matters in a due manner when working with arrays that take space in memory.
+
+![Alt text](image.png) ![Alt text](image-1.png)
+
+In conclusion, we need to remodel this simulation into a high speed computing process for next week. 
