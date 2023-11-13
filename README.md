@@ -1,10 +1,10 @@
 # Monte Carlo Simulation
 
 ## Who are we?
-* @alexandru.ifrimenco
-* @emil.mateescu
-* @madalin.frincu
-* @razvan.costache
+* @alexandru.ifrimenco - pthreads
+* @emil.mateescu - MPI
+* @madalin.frincu - OpenGL
+* @razvan.costache - OpenMP
 
 ## What's it about?
 
