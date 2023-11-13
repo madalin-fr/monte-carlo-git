@@ -37,4 +37,4 @@ For testing, we use a laptop with a 12th Gen i7-1260P with (12 cores, 16 threads
 3. Profiling of serial implementation
 ![](images/serial_profiling.png)
 
-As it's seen above, the movementTill, generateRandomElements and fillMatrix take the most amount of time. They call resource-heavy functions for random generation and would clearly benefit from code parallelization.
+As it's seen above, most of the time is spent on the "generator.seed(seed())" calls. This could be easily parallelized.
