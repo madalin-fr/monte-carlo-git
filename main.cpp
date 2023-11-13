@@ -88,7 +88,7 @@ int main() {
         fillMatrix(sea, water_symbol);
 
         constexpr char mine_symbol = '*';
-        constexpr int mines_count = 6;
+        constexpr int mines_count = 10;
         generateRandomElements(sea, mine_symbol, mines_count);
 
         constexpr char end_symbol = 'E';
