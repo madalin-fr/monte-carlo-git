@@ -1,16 +1,16 @@
-## Monte Carlo Simulation
+# Monte Carlo Simulation
 
-# Who are we?
-*@alexandru.ifrimenco
-*@emil.mateescu
-*@madalin.frincu
-*@razvan.costache
+## Who are we?
+* @alexandru.ifrimenco
+* @emil.mateescu
+* @madalin.frincu
+* @razvan.costache
 
-# What's it about?
+## What's it about?
 
 Monte Carlo Analysis for a ship traversing a sea full of mines. Based on this [repository](https://github.com/dmitrijbes/monte-carlo-ship/)
 
-# Description
+## Description
 We run 500000 experiments on a 30x30 matrix with 10 mines distributed randomly to determine the probability of the ship successfully crossing the sea.
 
 Each experiment has the following rules:
@@ -24,10 +24,10 @@ There are 4 functions
 2. 'fillMatrix' - Fills the given matrix with a specified symbol
 3. 'generateRandomElements' - Generates random coordinates and places a specified number of elements (mines) in the matrix. It ensures that each element is placed in a unique location.
 4. 'movementTill' - Simulates the movement of the ship through the sea matrix. The function returns 'true' if the ship reaches the destination or 'false' viceversa.
-# Testing environment
+## Testing environment
 For testing, we use a laptop with a 12th Gen i7-1260P with (12 cores, 16 threads) running a Ubuntu 20.04 Operating System
 
-# Week 1 - Profiling of serial implementation
+## Week 1 - Profiling of serial implementation
 
 1. Serial Implementation - sligthly modified the original code
 2. Measuring execution time of serial implementation 
