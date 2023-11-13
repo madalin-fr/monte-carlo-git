@@ -3,7 +3,7 @@
 ## Who are we?
 * @alexandru.ifrimenco - pthreads
 * @emil.mateescu - MPI
-* @madalin.frincu - OpenGL
+* @madalin.frincu - OpenCL
 * @razvan.costache - OpenMP
 
 ## What's it about?
