@@ -14,9 +14,9 @@ Monte Carlo Analysis for a ship traversing a sea full of mines. Based on this [r
 We run 500000 experiments on a 30x30 matrix with 10 mines distributed randomly to determine the probability of the ship successfully crossing the sea.
 
 Each experiment has the following rules:
-*The ship must move from the bottom-left corner to the top-right corner 
-*The ship can move only up and right with 1/2 probability for each direction.
-*The ship is destroyed on contact with a mine cell.
+* The ship must move from the bottom-left corner to the top-right corner 
+* The ship can move only up and right with 1/2 probability for each direction.
+* The ship is destroyed on contact with a mine cell.
 
 
 There are 4 functions 
