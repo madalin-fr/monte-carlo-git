@@ -34,7 +34,7 @@ For testing, we use a laptop with a 12th Gen i7-1260P with (12 cores, 16 threads
 
 > Program duration: 11.091308 seconds
 
-3. Profiling of serial implementation
+3. Profiling of serial implementation using `perf`
 ![](images/serial_profiling.png)
 
 As it's seen above, the movementTill, generateRandomElements and fillMatrix take the most amount of time. They call resource-heavy functions for random generation and would clearly benefit from code parallelization.
