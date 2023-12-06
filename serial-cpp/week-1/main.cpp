@@ -18,9 +18,10 @@ using Matrix = array<array<char, sea_size>, sea_size>;
 mt19937 generator;
 random_device seed;
 
+
 void fillMatrix(Matrix& sea, const char fill_symbol) {
-    for (int i = 0; i != sea.size(); ++i) {
-        for (int j = 0; j != sea.size(); ++j) {
+    for (Matrix::size_type i = 0; i != sea.size(); ++i) {
+        for (Matrix::size_type j = 0; j != sea[i].size(); ++j) {
             sea[i][j] = fill_symbol;
         }
     }
@@ -45,13 +46,14 @@ void generateRandomElements(Matrix& sea, const char element_symbol,
     }
 }
 
+
 bool movementTill(Matrix& sea, const char destination_symbol,
                   const char failure_symbol) {
     generator.seed(seed());
     bernoulli_distribution ber_dist;
 
-    int x = 0;
-    int y = 0;
+    Matrix::size_type x = 0;
+    Matrix::size_type y = 0;
     constexpr int movement_limit = 50000;
     for (int i = 0; i < movement_limit; ++i) {
         if (sea[x][y] == failure_symbol) return false;
@@ -61,7 +63,7 @@ bool movementTill(Matrix& sea, const char destination_symbol,
             ++y;
             continue;
         }
-        if (y == sea.size() - 1) {
+        if (y == sea[x].size() - 1) {
             ++x;
             continue;
         }
