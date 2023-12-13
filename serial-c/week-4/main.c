@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define sea_size 30
+#define sea_size 800
 #define movement_limit 50000
-#define tests 500000
-#define mines_count 10
+#define tests 1200000
+#define mines_count 1
 
 char sea[sea_size][sea_size];
 
